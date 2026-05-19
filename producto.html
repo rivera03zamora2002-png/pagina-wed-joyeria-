@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Producto | Alyen Joyería</title>
+
+<!-- FUENTES PREMIUM -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- ICONOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS GLOBAL -->
+<link rel="stylesheet" href="diseño2.css">
+</head>
+<body>
+
+
+<!-- HEADER — idéntico al index.html -->
+<header class="header">
+    <div class="logo">
+        <img src="png wed/LogoAlyen.png" alt="Alyen Logo">
+    </div>
+    <nav class="nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+
+        <div class="dropdown">
+            <button class="dropbtn" type="button">Productos ▾</button>
+            <div class="dropdown-content">
+                <a href="anillos.html"><img src="anillos/anillopremium.png" alt="Anillos"><span>Anillos</span></a>
+                <a href="cadenas.html"><img src="png wed/cadena1.png" alt="Cadenas"><span>Cadenas</span></a>
+                <a href="pulseras.html"><img src="png wed/pulsera1.png" alt="Pulseras"><span>Pulseras</span></a>
+                <a href="dijes.html"><img src="png wed/dije1.png" alt="Dijes"><span>Dijes</span></a>
+            </div>
+        </div>
+
+        <a href="contactos.html" class="nav-link">Contacto</a>
+
+        <a href="cuenta.html" class="nav-link">Mi Cuenta</a>
+
+        <!-- ÍCONO CARRITO EN NAV -->
+        <a href="carrito.html" class="nav-link cart-nav-link" aria-label="Ver carrito">
+            <i class="fas fa-bag-shopping"></i>
+            <span class="cart-badge" id="navCartBadge">0</span>
+        </a>
+    </nav>
+</header>
+
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-bar">
+    <a href="index.html">Inicio</a>
+    <span class="bc-sep"><i class="fas fa-chevron-right"></i></span>
+    <a href="anillos.html" id="bcCategory">Anillos</a>
+    <span class="bc-sep"><i class="fas fa-chevron-right"></i></span>
+    <span id="bcProduct">Anillo Oro 18k</span>
+</div>
+
+
+<!-- SECCIÓN PRINCIPAL DEL PRODUCTO -->
+<section class="product-section">
+    <div class="product-layout">
+
+        <!-- GALERÍA DE IMÁGENES -->
+        <div class="product-gallery reveal">
+            <div class="gallery-main">
+                <div class="gallery-badge">EXCLUSIVO</div>
+                <img id="mainImg" src="anillos/anillopremium.png" alt="Producto principal" class="gallery-img-main">
+                <div class="gallery-zoom-hint"><i class="fas fa-search-plus"></i> Pasa el cursor para ver detalle</div>
+            </div>
+            <div class="gallery-thumbs" id="galleryThumbs">
+                <div class="thumb active" data-src="anillos/anillopremium.png">
+                    <img src="anillos/anillopremium.png" alt="Vista 1">
+                </div>
+                <div class="thumb" data-src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80">
+                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=120&q=80" alt="Vista 2">
+                </div>
+                <div class="thumb" data-src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=120&q=80" alt="Vista 3">
+                </div>
+            </div>
+        </div>
+
+        <!-- INFORMACIÓN DEL PRODUCTO -->
+        <div class="product-info reveal">
+
+            <div class="product-meta">
+                <span class="product-brand">MAISON ALYEN</span>
+                <div class="product-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span class="reviews-count">(47 reseñas)</span>
+                </div>
+            </div>
+
+            <h1 class="product-name" id="productName">Anillo Oro 18k</h1>
+            <div class="product-divider"></div>
+
+            <div class="product-price-zone">
+                <span class="product-price" id="productPrice">$800.000</span>
+                <span class="product-price-note">IVA incluido</span>
+            </div>
+
+            <p class="product-desc" id="productDesc">
+                Joya artesanal elaborada en oro de 18 kilates con acabado satinado.
+                Diseñada para mujeres que aprecian la elegancia atemporal. Cada pieza es
+                trabajada a mano por nuestros maestros joyeros con más de 20 años de experiencia.
+                Certificado de autenticidad incluido.
+            </p>
+
+            <!-- ESPECIFICACIONES -->
+            <div class="product-specs">
+                <div class="spec-item">
+                    <i class="fas fa-medal"></i>
+                    <div><strong>Material</strong><span>Oro 18k certificado</span></div>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-ruler"></i>
+                    <div><strong>Talla</strong><span>Personalizable</span></div>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-gem"></i>
+                    <div><strong>Piedra</strong><span>Brillante natural</span></div>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-box-open"></i>
+                    <div><strong>Incluye</strong><span>Estuche premium + certificado</span></div>
+                </div>
+            </div>
+
+            <!-- SELECTOR DE TALLA -->
+            <div class="product-size-zone">
+                <label class="lux-label-prod">Selecciona talla</label>
+                <div class="size-grid" id="sizeGrid">
+                    <button class="size-btn" type="button" data-size="5">5</button>
+                    <button class="size-btn" type="button" data-size="6">6</button>
+                    <button class="size-btn active" type="button" data-size="7">7</button>
+                    <button class="size-btn" type="button" data-size="8">8</button>
+                    <button class="size-btn" type="button" data-size="9">9</button>
+                    <button class="size-btn" type="button" data-size="10">10</button>
+                </div>
+                <span class="size-guide-link"><i class="fas fa-ruler-horizontal"></i> Guía de tallas</span>
+            </div>
+
+            <!-- CANTIDAD -->
+            <div class="product-qty-zone">
+                <label class="lux-label-prod">Cantidad</label>
+                <div class="prod-qty-control">
+                    <button class="qty-btn" id="prodQtyMinus" type="button">−</button>
+                    <span class="qty-val" id="prodQtyVal">1</span>
+                    <button class="qty-btn" id="prodQtyPlus" type="button">+</button>
+                </div>
+            </div>
+
+            <!-- BOTONES DE ACCIÓN -->
+            <div class="product-actions">
+                <button class="btn-add-cart" id="addToCartBtn" type="button">
+                    <i class="fas fa-bag-shopping"></i>
+                    <span class="btn-text">Agregar al carrito</span>
+                    <span class="btn-shine"></span>
+                </button>
+                <button class="btn-wishlist" id="wishlistBtn" type="button" aria-label="Añadir a favoritos">
+                    <i class="far fa-heart"></i>
+                </button>
+            </div>
+
+            <!-- TRUST BADGES -->
+            <div class="product-trust">
+                <div class="trust-item"><i class="fas fa-shield-alt"></i><span>Garantía 12 meses</span></div>
+                <div class="trust-item"><i class="fas fa-truck"></i><span>Envío premium gratis</span></div>
+                <div class="trust-item"><i class="fas fa-undo"></i><span>Devolución 30 días</span></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- TOAST — fuera de la sección de producto -->
+<div class="cart-toast" id="cartToast">
+    <i class="fas fa-check-circle"></i>
+    <span>Producto añadido al carrito</span>
+    <a href="carrito.html" class="toast-cart-link">Ver carrito <i class="fas fa-arrow-right"></i></a>
+</div>
+
+
+<!-- PRODUCTOS RELACIONADOS -->
+<div class="related-section">
+    <div class="related-header reveal">
+        <span class="collection-subtitle">TAMBIÉN TE PUEDE INTERESAR</span>
+        <h2 class="collection-title" style="font-size:clamp(1.5rem,3vw,2.2rem);margin:10px 0 20px;">Piezas relacionadas</h2>
+        <div class="collection-line"></div>
+    </div>
+
+    <div class="cards-grid related-grid">
+
+        <div class="card reveal">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&q=80" alt="Cadena Premium">
+                <div class="card-overlay">
+                    <span class="view-text">Ver producto</span>
+                    <a href="producto.html?id=2" class="btn-hover">Explorar</a>
+                </div>
+                <div class="glass-reflection"></div>
+            </div>
+            <div class="card-info">
+                <h3>Cadena Premium</h3>
+                <p>$1.200.000</p>
+            </div>
+        </div>
+
+        <div class="card reveal">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=600&q=80" alt="Pulsera Elegance">
+                <div class="card-overlay">
+                    <span class="view-text">Ver producto</span>
+                    <a href="producto.html?id=3" class="btn-hover">Explorar</a>
+                </div>
+                <div class="glass-reflection"></div>
+            </div>
+            <div class="card-info">
+                <h3>Pulsera Elegance</h3>
+                <p>$650.000</p>
+            </div>
+        </div>
+
+        <div class="card reveal">
+            <div class="card-img">
+                <img src="png wed/anillo1.png" alt="Dije Corazón Oro 18k">
+                <div class="card-overlay">
+                    <span class="view-text">Ver producto</span>
+                    <a href="producto.html?id=4" class="btn-hover">Explorar</a>
+                </div>
+                <div class="glass-reflection"></div>
+            </div>
+            <div class="card-info">
+                <h3>Dije Corazón Oro 18k</h3>
+                <p>$600.000</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- FOOTER — idéntico al index.html -->
+<footer class="footer">
+
+    <div class="lux-particles"></div>
+    <div class="lux-light"></div>
+
+    <div class="footer-container">
+
+        <div class="footer-logo reveal">
+            <img src="png wed/ALYENlogoprincipal.png" alt="Alyen Joyería">
+            <span class="logo-glow"></span>
+            <span class="logo-shine"></span>
+        </div>
+
+        <p class="footer-brand reveal">ALYEN</p>
+
+        <div class="footer-line reveal"></div>
+
+        <div class="footer-social reveal">
+            <a href="#" class="social instagram">
+                <i class="fab fa-instagram"></i>
+                <span class="hover-glow"></span>
+            </a>
+            <a href="#" class="social facebook">
+                <i class="fab fa-facebook-f"></i>
+                <span class="hover-glow"></span>
+            </a>
+            <a href="https://wa.me/573000000000" class="social whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span class="hover-glow"></span>
+            </a>
+            <a href="#" class="social tiktok">
+                <i class="fab fa-tiktok"></i>
+                <span class="hover-glow"></span>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-menu">
+        <div class="footer-container">
+
+            <div class="footer-column reveal">
+                <h3 class="footer-title">Tienda</h3>
+                <div class="footer-links">
+                    <a href="anillos.html">Anillos</a>
+                    <a href="cadenas.html">Cadenas</a>
+                    <a href="pulseras.html">Pulseras</a>
+                    <a href="dijes.html">Dijes</a>
+                </div>
+            </div>
+
+            <div class="footer-column reveal">
+                <h3 class="footer-title">Clientes</h3>
+                <div class="footer-links">
+                    <a href="mi-cuenta.html">Mi cuenta</a>
+                    <a href="#">Seguimiento de pedido</a>
+                    <a href="#">Soporte</a>
+                </div>
+            </div>
+
+            <div class="footer-column reveal">
+                <h3 class="footer-title">Colecciones</h3>
+                <div class="footer-links">
+                    <a href="#">Oro 18k</a>
+                    <a href="#">Edición exclusiva</a>
+                    <a href="novedades.html">Novedades</a>
+                </div>
+            </div>
+
+            <div class="footer-column reveal">
+                <h3 class="footer-title">Información</h3>
+                <div class="footer-links">
+                    <a href="Poli-privacidad.html">Privacidad</a>
+                    <a href="Terminos.html">Términos</a>
+                    <a href="Poli-envios.html">Envíos</a>
+                    <a href="Poli-garantia.html">Garantía</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-lux">
+        <div class="lux-particles"></div>
+        <div class="lux-line"></div>
+        <div class="lux-content">
+            <h2 class="lux-brand">ALYEN</h2>
+            <div class="lux-divider"></div>
+            <p class="lux-copy">Joyería de alta elegancia</p>
+        </div>
+        <!-- TRANSICIÓN DE PÁGINA — siempre dentro del footer-lux -->
+        <div class="page-transition"></div>
+    </div>
+
+</footer>
+
+
+<!-- WHATSAPP FIJO -->
+<div class="whatsapp-fixed">
+    <a href="https://wa.me/573000000000" target="_blank" class="whatsapp-btn">
+        <span class="whatsapp-text">Permítenos ofrecerte una asesoría exclusiva</span>
+        <span class="whatsapp-icon"><i class="fab fa-whatsapp"></i></span>
+    </a>
+</div>
+
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+<script>
+
+/* ====== CATÁLOGO DE PRODUCTOS ====== */
+const PRODUCTS = {
+  1: {
+    name:     "Anillo Oro 18k",
+    price:    800000,
+    img:      "anillos/anillopremium.png",
+    category: "Anillos",
+    href:     "anillos.html",
+    desc:     "Joya artesanal elaborada en oro de 18 kilates con acabado satinado. Diseñada para mujeres que aprecian la elegancia atemporal. Cada pieza es trabajada a mano por nuestros maestros joyeros con más de 20 años de experiencia. Certificado de autenticidad incluido."
+  },
+  2: {
+    name:     "Cadena Premium",
+    price:    1200000,
+    img:      "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&q=80",
+    category: "Cadenas",
+    href:     "cadenas.html",
+    desc:     "Cadena artesanal en oro 18k de eslabones finos, con cierre de seguridad. Longitud: 45 cm. Ideal para llevar sola o con un dije exclusivo. Peso: 8 gramos."
+  },
+  3: {
+    name:     "Pulsera Elegance",
+    price:    650000,
+    img:      "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=600&q=80",
+    category: "Pulseras",
+    href:     "pulseras.html",
+    desc:     "Pulsera tejida en oro de 18 kilates con detalles en pavé de brillantes. Ajuste regulable. Talla única adaptable. Perfecta para cualquier ocasión especial."
+  },
+  4: {
+    name:     "Dije Corazón Oro 18k",
+    price:    600000,
+    img:      "https://images.unsplash.com/photo-1588444650700-4c9b7d3c7f43?w=600&q=80",
+    category: "Dijes",
+    href:     "dijes.html",
+    desc:     "Dije en forma de corazón elaborado en oro de 18 kilates. Símbolo de amor eterno, trabajado con técnica de filigrana. Compatible con cadenas de 1 a 3 mm."
+  }
+};
+
+
+/* ====== HELPERS DE CARRITO (localStorage) ====== */
+function getCart() {
+    return JSON.parse(localStorage.getItem("alyen_cart")) || [];
+}
+function saveCart(cart) {
+    localStorage.setItem("alyen_cart", JSON.stringify(cart));
+}
+function getCartTotal(cart) {
+    return cart.reduce((sum, item) => sum + item.qty, 0);
+}
+function updateCartBadge() {
+    const total = getCartTotal(getCart());
+    const badge = document.getElementById("navCartBadge");
+    if (badge) badge.textContent = total;
+}
+
+
+/* ====== CARGAR DATOS DEL PRODUCTO SEGÚN URL ====== */
+function loadProduct() {
+    const params = new URLSearchParams(window.location.search);
+    const id = parseInt(params.get("id")) || 1;
+    const p  = PRODUCTS[id] || PRODUCTS[1];
+
+    document.getElementById("productName").textContent  = p.name;
+    document.getElementById("productPrice").textContent = "$" + p.price.toLocaleString("es-CO");
+    document.getElementById("productDesc").textContent  = p.desc;
+    document.getElementById("bcProduct").textContent    = p.name;
+    document.getElementById("bcCategory").textContent   = p.category;
+    document.getElementById("bcCategory").href          = p.href;
+    document.getElementById("mainImg").src              = p.img;
+    document.title = p.name + " | Alyen Joyería";
+}
+
+
+/* ====== GALERÍA DE MINIATURAS ====== */
+document.getElementById("galleryThumbs").addEventListener("click", function (e) {
+    const thumb = e.target.closest(".thumb");
+    if (!thumb) return;
+
+    document.querySelectorAll(".thumb").forEach(t => t.classList.remove("active"));
+    thumb.classList.add("active");
+
+    const mainImg = document.getElementById("mainImg");
+    mainImg.style.opacity = "0";
+    setTimeout(() => {
+        mainImg.src = thumb.dataset.src;
+        mainImg.style.opacity = "1";
+    }, 200);
+});
+
+
+/* ====== SELECTOR DE TALLA ====== */
+let selectedSize = "7";
+document.getElementById("sizeGrid").addEventListener("click", function (e) {
+    const btn = e.target.closest(".size-btn");
+    if (!btn) return;
+    document.querySelectorAll(".size-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    selectedSize = btn.dataset.size;
+});
+
+
+/* ====== CONTROL DE CANTIDAD ====== */
+let qty = 1;
+document.getElementById("prodQtyMinus").addEventListener("click", () => {
+    if (qty > 1) { qty--; document.getElementById("prodQtyVal").textContent = qty; }
+});
+document.getElementById("prodQtyPlus").addEventListener("click", () => {
+    if (qty < 10) { qty++; document.getElementById("prodQtyVal").textContent = qty; }
+});
+
+
+/* ====== AÑADIR AL CARRITO ====== */
+document.getElementById("addToCartBtn").addEventListener("click", function () {
+    const params = new URLSearchParams(window.location.search);
+    const id = parseInt(params.get("id")) || 1;
+    const p  = PRODUCTS[id] || PRODUCTS[1];
+
+    let cart    = getCart();
+    const index = cart.findIndex(i => i.id === id && i.size === selectedSize);
+
+    if (index > -1) {
+        /* Producto ya existe con la misma talla: sumar cantidad */
+        cart[index].qty += qty;
+    } else {
+        /* Producto nuevo: empujar al carrito */
+        cart.push({
+            id,
+            name:  p.name,
+            price: p.price,
+            img:   p.img,
+            qty,
+            size:  selectedSize
+        });
+    }
+
+    saveCart(cart);
+    updateCartBadge();
+
+    /* Feedback visual en el botón */
+    const btn = this;
+    btn.classList.add("added");
+    btn.querySelector(".btn-text").textContent = "¡Añadido!";
+    setTimeout(() => {
+        btn.classList.remove("added");
+        btn.querySelector(".btn-text").textContent = "Agregar al carrito";
+    }, 2000);
+
+    /* Toast de confirmación */
+    const toast = document.getElementById("cartToast");
+    toast.classList.add("visible");
+    setTimeout(() => toast.classList.remove("visible"), 3200);
+});
+
+
+/* ====== BOTÓN WISHLIST ====== */
+document.getElementById("wishlistBtn").addEventListener("click", function () {
+    const isActive = this.classList.toggle("active");
+    this.querySelector("i").className = isActive ? "fas fa-heart" : "far fa-heart";
+});
+
+
+/* ====== INICIALIZACIÓN (DOMContentLoaded) ====== */
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* Cargar producto */
+    loadProduct();
+
+    /* Badge inicial del carrito */
+    updateCartBadge();
+
+    /* Header con scroll */
+    window.addEventListener("scroll", () => {
+        document.querySelector(".header").classList.toggle("scrolled", window.scrollY > 50);
+    });
+
+    /* Reveal con IntersectionObserver */
+    const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add("show", "active");
+            }
+        });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
+
+    /* Transición de página */
+    document.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function (e) {
+            if (this.target === "_blank") return;
+            e.preventDefault();
+            const overlay = document.querySelector(".page-transition");
+            if (overlay) overlay.classList.add("active");
+            setTimeout(() => { window.location = this.href; }, 500);
+        });
+    });
+
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Cuenta | Alyen Joyería</title>
+
+<!-- FUENTES PREMIUM -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- ICONOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS GLOBAL -->
+<link rel="stylesheet" href="diseño2.css">
+</head>
+
+<body>
+
+<!-- HEADER (idéntico a index.html) -->
+<header class="header">
+
+    <div class="logo">
+        <img src="png wed/LogoAlyen.png" alt="Alyen Logo">
+    </div>
+
+    <nav class="nav">
+
+        <a href="index.html" class="nav-link">Inicio</a>
+
+        <div class="dropdown">
+            <button class="dropbtn" type="button">Productos ▾</button>
+            <div class="dropdown-content">
+                <a href="anillos.html">
+                    <img src="anillos/anillopremium.png" alt="Anillos">
+                    <span>Anillos</span>
+                </a>
+                <a href="cadenas.html">
+                    <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a" alt="Cadenas">
+                    <span>Cadenas</span>
+                </a>
+                <a href="pulseras.html">
+                    <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638" alt="Pulseras">
+                    <span>Pulseras</span>
+                </a>
+                <a href="dijes.html">
+                    <img src="png wed/dije1.png" alt="Dijes">
+                    <span>Dijes</span>
+                </a>
+            </div>
+        </div>
+
+        <a href="contactos.html" class="nav-link">Contacto</a>
+
+        <a href="cuenta.html" class="nav-link">Mi Cuenta</a>
+
+    </nav>
+
+</header>
+
+
+<!-- HERO PEQUEÑO DE PÁGINA -->
+<section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <span class="page-hero-sub">MAISON ALYEN</span>
+        <h1 class="page-hero-title">MI CUENTA</h1>
+        <div class="page-divider"></div>
+        <p class="page-hero-phrase">Tu perfil exclusivo Alyen</p>
+    </div>
+</section>
+
+
+<!-- SECCIÓN PRINCIPAL DE CUENTA -->
+<section class="account-section">
+
+    <!-- TABS DE NAVEGACIÓN -->
+    <div class="account-tabs reveal">
+        <button class="acc-tab active" data-tab="perfil">
+            <i class="fas fa-user"></i> Perfil
+        </button>
+        <button class="acc-tab" data-tab="pedidos">
+            <i class="fas fa-box"></i> Mis Pedidos
+        </button>
+        <button class="acc-tab" data-tab="seguridad">
+            <i class="fas fa-lock"></i> Seguridad
+        </button>
+    </div>
+
+
+    <!-- ── PANEL: PERFIL ── -->
+    <div class="acc-panel active" id="panel-perfil">
+        <div class="account-form-wrap reveal">
+
+            <div class="form-header">
+                <span class="collection-subtitle">INFORMACIÓN PERSONAL</span>
+                <h2 class="form-title">Datos de tu cuenta</h2>
+                <div class="form-line"></div>
+            </div>
+
+            <!-- AVATAR -->
+            <div class="avatar-zone">
+                <div class="avatar-ring">
+                    <div class="avatar-circle" id="avatarCircle">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <button class="avatar-edit" id="avatarEditBtn" type="button" title="Cambiar avatar">
+                        <i class="fas fa-camera"></i>
+                    </button>
+                </div>
+                <p class="avatar-hint">Haz clic para cambiar tu foto</p>
+            </div>
+
+            <form class="lux-form" id="accountForm" novalidate>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="lux-label" for="nombre">Nombre completo</label>
+                        <div class="lux-input-wrap">
+                            <i class="fas fa-user lux-input-icon"></i>
+                            <input type="text" id="nombre" class="lux-input" placeholder="Ej. María González" autocomplete="name">
+                        </div>
+                        <span class="field-error" id="err-nombre"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="lux-label" for="email">Correo electrónico</label>
+                        <div class="lux-input-wrap">
+                            <i class="fas fa-envelope lux-input-icon"></i>
+                            <input type="email" id="email" class="lux-input" placeholder="correo@ejemplo.com" autocomplete="email">
+                        </div>
+                        <span class="field-error" id="err-email"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="lux-label" for="edad">Edad</label>
+                        <div class="lux-input-wrap">
+                            <i class="fas fa-birthday-cake lux-input-icon"></i>
+                            <input type="number" id="edad" class="lux-input" placeholder="Ej. 28" min="16" max="99">
+                        </div>
+                        <span class="field-error" id="err-edad"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="lux-label" for="telefono">Número de teléfono</label>
+                        <div class="lux-input-wrap">
+                            <i class="fas fa-phone lux-input-icon"></i>
+                            <input type="tel" id="telefono" class="lux-input" placeholder="+57 300 000 0000" autocomplete="tel">
+                        </div>
+                        <span class="field-error" id="err-telefono"></span>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label class="lux-label" for="ciudad">Ciudad</label>
+                    <div class="lux-input-wrap">
+                        <i class="fas fa-map-marker-alt lux-input-icon"></i>
+                        <input type="text" id="ciudad" class="lux-input" placeholder="Ej. Bogotá, Colombia">
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-lux-primary" id="saveBtn">
+                        <span class="btn-text">Guardar información</span>
+                        <span class="btn-shine"></span>
+                    </button>
+                </div>
+
+            </form>
+
+            <!-- TOAST CONFIRMACIÓN -->
+            <div class="lux-toast" id="luxToast">
+                <i class="fas fa-check-circle"></i>
+                <span id="toastMsg">Información guardada con éxito</span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ── PANEL: PEDIDOS ── -->
+    <div class="acc-panel" id="panel-pedidos">
+        <div class="orders-wrap reveal">
+
+            <div class="form-header">
+                <span class="collection-subtitle">HISTORIAL</span>
+                <h2 class="form-title">Mis Pedidos</h2>
+                <div class="form-line"></div>
+            </div>
+
+            <div class="orders-list">
+
+                <div class="order-card">
+                    <div class="order-img">
+                        <img src="anillos/anillopremium.png" alt="Anillo Oro">
+                    </div>
+                    <div class="order-info">
+                        <h4>Anillo Oro 18k</h4>
+                        <p class="order-date">Pedido: 10 de abril, 2025</p>
+                        <p class="order-price">$800.000</p>
+                    </div>
+                    <span class="order-status status-delivered">Entregado</span>
+                </div>
+
+                <div class="order-card">
+                    <div class="order-img">
+                        <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=120&q=80" alt="Cadena">
+                    </div>
+                    <div class="order-info">
+                        <h4>Cadena Premium</h4>
+                        <p class="order-date">Pedido: 2 de marzo, 2025</p>
+                        <p class="order-price">$1.200.000</p>
+                    </div>
+                    <span class="order-status status-shipped">En camino</span>
+                </div>
+
+                <!-- Estado vacío (oculto por defecto) -->
+                <div class="order-empty" id="noOrders" style="display:none">
+                    <i class="fas fa-gem"></i>
+                    <p>Aún no tienes pedidos registrados</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ── PANEL: SEGURIDAD ── -->
+    <div class="acc-panel" id="panel-seguridad">
+        <div class="account-form-wrap reveal">
+
+            <div class="form-header">
+                <span class="collection-subtitle">PROTECCIÓN DE CUENTA</span>
+                <h2 class="form-title">Seguridad</h2>
+                <div class="form-line"></div>
+            </div>
+
+            <form class="lux-form" id="securityForm" novalidate>
+
+                <div class="form-group full-width">
+                    <label class="lux-label" for="pass-actual">Contraseña actual</label>
+                    <div class="lux-input-wrap">
+                        <i class="fas fa-lock lux-input-icon"></i>
+                        <input type="password" id="pass-actual" class="lux-input" placeholder="••••••••">
+                        <button type="button" class="toggle-pass" data-target="pass-actual">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="lux-label" for="pass-nueva">Nueva contraseña</label>
+                        <div class="lux-input-wrap">
+                            <i class="fas fa-lock lux-input-icon"></i>
+                            <input type="password" id="pass-nueva" class="lux-input" placeholder="Mínimo 8 caracteres">
+                            <button type="button" class="toggle-pass" data-target="pass-nueva">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <!-- Indicador de fuerza de contraseña -->
+                        <div class="pass-strength" id="passStrength">
+                            <div class="strength-bar">
+                                <div class="strength-fill" id="strengthFill"></div>
+                            </div>
+                            <span class="strength-label" id="strengthLabel"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="lux-label" for="pass-confirm">Confirmar contraseña</label>
+                        <div class="lux-input-wrap">
+                            <i class="fas fa-lock lux-input-icon"></i>
+                            <input type="password" id="pass-confirm" class="lux-input" placeholder="Repite la nueva contraseña">
+                            <button type="button" class="toggle-pass" data-target="pass-confirm">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <span class="field-error" id="err-pass"></span>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-lux-primary">
+                        <span class="btn-text">Actualizar contraseña</span>
+                        <span class="btn-shine"></span>
+                    </button>
+                </div>
+
+            </form>
+
+            <!-- TOAST SEGURIDAD -->
+            <div class="lux-toast" id="secToast">
+                <i class="fas fa-check-circle"></i>
+                <span>Contraseña actualizada correctamente</span>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- FOOTER (idéntico a index.html) -->
+<footer class="footer">
+
+    <div class="lux-particles"></div>
+    <div class="lux-light"></div>
+
+    <div class="footer-container">
+
+        <div class="footer-logo reveal">
+            <img src="png wed/LogoAlyen.png" alt="Alyen Joyería">
+            <span class="logo-glow"></span>
+            <span class="logo-shine"></span>
+        </div>
+
+        <p class="footer-brand reveal">ALYEN</p>
+
+        <div class="footer-line reveal"></div>
+
+        <div class="footer-social reveal">
+
+            <a href="#" class="social instagram">
+                <i class="fab fa-instagram"></i>
+                <span class="hover-glow"></span>
+            </a>
+
+            <a href="#" class="social facebook">
+                <i class="fab fa-facebook-f"></i>
+                <span class="hover-glow"></span>
+            </a>
+
+            <a href="https://wa.me/573000000000" class="social whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span class="hover-glow"></span>
+            </a>
+
+            <a href="#" class="social tiktok">
+                <i class="fab fa-tiktok"></i>
+                <span class="hover-glow"></span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-menu">
+        <div class="footer-container">
+
+            <div class="footer-column reveal">
+                <h3 class="footer-title">Tienda</h3>
+                <div class="footer-links">
+                    <a href="anillos.html">Anillos</a>
+                    <a href="cadenas.html">Cadenas</a>
+                    <a href="pulseras.html">Pulseras</a>
+                    <a href="dijes.html">Dijes</a>
+                </div>
+            </div>
+
+            <div class="footer-column reveal">
+                <h3 class="footer-title">Clientes</h3>
+                <div class="footer-links">
+                    <a href="mi_cuenta.html">Mi cuenta</a>
+                    <a href="#">Seguimiento de pedido</a>
+                    <a href="#">Soporte</a>
+                </div>
+            </div>
+
+            <div class="footer-column reveal">
+                <h3 class="footer-title">Colecciones</h3>
+                <div class="footer-links">
+                    <a href="#">Oro 18k</a>
+                    <a href="#">Edición exclusiva</a>
+                    <a href="#">Novedades</a>
+                </div>
+            </div>
+
+            <div class="footer-column reveal">
+                <h3 class="footer-title">Información</h3>
+                <div class="footer-links">
+                    <a href="Poli-privacidad.html">Privacidad</a>
+                    <a href="Terminos.html">Términos</a>
+                    <a href="Poli-envios.html">Envíos</a>
+                    <a href="Poli-garantia.html">Garantía</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-lux">
+        <div class="lux-particles"></div>
+        <div class="lux-line"></div>
+        <div class="lux-content">
+            <h2 class="lux-brand">ALYEN</h2>
+            <div class="lux-divider"></div>
+            <p class="lux-copy">Joyería de alta elegancia</p>
+        </div>
+        <div class="page-transition"></div>
+    </div>
+
+</footer>
+
+
+<!-- WHATSAPP FIJO -->
+<div class="whatsapp-fixed">
+    <a href="https://wa.me/573000000000" target="_blank" class="whatsapp-btn">
+        <span class="whatsapp-text">Permítenos ofrecerte una asesoría exclusiva</span>
+        <span class="whatsapp-icon"><i class="fab fa-whatsapp"></i></span>
+    </a>
+</div>
+
+
+<!-- ===================== JAVASCRIPT ===================== -->
+
+<!-- TRANSICIÓN DE PÁGINA -->
+<script>
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        if (this.target === "_blank") return;
+        e.preventDefault();
+        const overlay = document.querySelector(".page-transition");
+        overlay.classList.add("active");
+        setTimeout(() => { window.location = this.href; }, 500);
+    });
+});
+</script>
+
+<!-- HEADER SCROLL -->
+<script>
+window.addEventListener("scroll", function() {
+    document.querySelector(".header").classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
+
+<!-- REVEAL SCROLL -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show", "active");
+            }
+        });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+});
+</script>
+
+<!-- LÓGICA DE TABS -->
+<script>
+document.querySelectorAll(".acc-tab").forEach(tab => {
+    tab.addEventListener("click", function() {
+        document.querySelectorAll(".acc-tab").forEach(t => t.classList.remove("active"));
+        document.querySelectorAll(".acc-panel").forEach(p => p.classList.remove("active"));
+        this.classList.add("active");
+        document.getElementById("panel-" + this.dataset.tab).classList.add("active");
+    });
+});
+</script>
+
+<!-- FORMULARIO DE PERFIL: VALIDACIÓN Y GUARDADO -->
+<script>
+function showError(id, msg) {
+    const el = document.getElementById(id);
+    if (el) {
+        el.textContent = msg;
+        el.classList.toggle("visible", !!msg);
+    }
+}
+
+function validateEmail(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
+function validatePhone(p) { return /^[\d\s\+\-\(\)]{7,15}$/.test(p); }
+
+document.getElementById("accountForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    let valid = true;
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const email  = document.getElementById("email").value.trim();
+    const edad   = parseInt(document.getElementById("edad").value);
+    const tel    = document.getElementById("telefono").value.trim();
+
+    if (nombre.length < 3) { showError("err-nombre", "Ingresa tu nombre completo (mín. 3 caracteres)"); valid = false; }
+    else showError("err-nombre", "");
+
+    if (!validateEmail(email)) { showError("err-email", "Correo no válido. Ej: nombre@dominio.com"); valid = false; }
+    else showError("err-email", "");
+
+    if (isNaN(edad) || edad < 16 || edad > 99) { showError("err-edad", "Ingresa una edad entre 16 y 99 años"); valid = false; }
+    else showError("err-edad", "");
+
+    if (!validatePhone(tel)) { showError("err-telefono", "Número de teléfono no válido"); valid = false; }
+    else showError("err-telefono", "");
+
+    if (valid) {
+        const btn = document.getElementById("saveBtn");
+        btn.disabled = true;
+        btn.querySelector(".btn-text").textContent = "Guardando...";
+
+        setTimeout(() => {
+            btn.disabled = false;
+            btn.querySelector(".btn-text").textContent = "Guardar información";
+            showToast("luxToast");
+            localStorage.setItem("alyen_user", JSON.stringify({ nombre, email, edad, tel }));
+        }, 1200);
+    }
+});
+
+/* Cargar datos guardados al abrir la página */
+window.addEventListener("load", () => {
+    const saved = localStorage.getItem("alyen_user");
+    if (saved) {
+        const d = JSON.parse(saved);
+        document.getElementById("nombre").value   = d.nombre || "";
+        document.getElementById("email").value    = d.email  || "";
+        document.getElementById("edad").value     = d.edad   || "";
+        document.getElementById("telefono").value = d.tel    || "";
+    }
+});
+</script>
+
+<!-- FORMULARIO DE SEGURIDAD -->
+<script>
+document.getElementById("securityForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const np = document.getElementById("pass-nueva").value;
+    const cp = document.getElementById("pass-confirm").value;
+
+    if (np.length < 8) { showError("err-pass", "La contraseña debe tener al menos 8 caracteres"); return; }
+    if (np !== cp)     { showError("err-pass", "Las contraseñas no coinciden"); return; }
+
+    showError("err-pass", "");
+    showToast("secToast");
+    this.reset();
+    document.getElementById("strengthFill").style.width = "0";
+    document.getElementById("strengthLabel").textContent = "";
+});
+
+/* Indicador de fuerza de contraseña */
+document.getElementById("pass-nueva").addEventListener("input", function() {
+    const v = this.value;
+    let score = 0;
+    if (v.length >= 8)         score++;
+    if (/[A-Z]/.test(v))       score++;
+    if (/[0-9]/.test(v))       score++;
+    if (/[^A-Za-z0-9]/.test(v)) score++;
+
+    const fill   = document.getElementById("strengthFill");
+    const label  = document.getElementById("strengthLabel");
+    const colors = ["#e74c3c", "#e67e22", "#d4af37", "#27ae60"];
+    const labels = ["Débil", "Regular", "Buena", "Fuerte"];
+
+    fill.style.width      = (score * 25) + "%";
+    fill.style.background = colors[score - 1] || "#333";
+    label.textContent     = labels[score - 1] || "";
+    label.style.color     = colors[score - 1] || "#888";
+});
+
+/* Mostrar / ocultar contraseña */
+document.querySelectorAll(".toggle-pass").forEach(btn => {
+    btn.addEventListener("click", function() {
+        const inp = document.getElementById(this.dataset.target);
+        const ico = this.querySelector("i");
+        if (inp.type === "password") {
+            inp.type = "text";
+            ico.className = "fas fa-eye-slash";
+        } else {
+            inp.type = "password";
+            ico.className = "fas fa-eye";
+        }
+    });
+});
+</script>
+
+<!-- AVATAR -->
+<script>
+document.getElementById("avatarEditBtn").addEventListener("click", () => {
+    const input = document.createElement("input");
+    input.type = "file";
+    input.accept = "image/*";
+    input.addEventListener("change", function() {
+        const file = this.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = ev => {
+            const circle = document.getElementById("avatarCircle");
+            circle.innerHTML = `<img src="${ev.target.result}" alt="Avatar" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">`;
+        };
+        reader.readAsDataURL(file);
+    });
+    input.click();
+});
+</script>
+
+<!-- TOAST GLOBAL -->
+<script>
+function showToast(id) {
+    const t = document.getElementById(id);
+    if (!t) return;
+    t.classList.add("visible");
+    setTimeout(() => t.classList.remove("visible"), 3500);
+}
+</script>
+
+
+</body>
+</html>

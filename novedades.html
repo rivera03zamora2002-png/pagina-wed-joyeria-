@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Novedades | Alyen Joyería</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="diseño2.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">
+        <img src="png wed/LogoAlyen.png" alt="Alyen Joyería">
+    </div>
+    <nav class="nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <div class="dropdown">
+            <button class="dropbtn" type="button">Productos ▾</button>
+            <div class="dropdown-content">
+                <a href="anillos.html"><img src="anillos/anillopremium.png" alt="Anillos"><span>Anillos</span></a>
+                <a href="cadenas.html"><img src="png wed/cadena1.png" alt="Cadenas"><span>Cadenas</span></a>
+                <a href="pulseras.html"><img src="png wed/pulsera1.png" alt="Pulseras"><span>Pulseras</span></a>
+                <a href="dijes.html"><img src="png wed/dije1.png" alt="Dijes"><span>Dijes</span></a>
+            </div>
+        </div>
+        <a href="contactos.html" class="nav-link">Contacto</a>
+        <a href="cuenta.html" class="nav-link">Mi Cuenta</a>
+        <a href="carrito.html" class="nav-link cart-nav-link" aria-label="Ver carrito">
+            <i class="fas fa-bag-shopping"></i>
+            <span class="cart-badge" id="navCartBadge">0</span>
+        </a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero-small">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="lux-title">NOVEDADES</h1>
+        <div class="divider"></div>
+        <p class="lux-phrase">Las últimas piezas de nuestra colección exclusiva</p>
+    </div>
+</section>
+
+<!-- FILTROS -->
+<section class="nov-filters-bar">
+    <div class="nov-filters-inner">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="anillos">Anillos</button>
+        <button class="filter-btn" data-filter="cadenas">Cadenas</button>
+        <button class="filter-btn" data-filter="pulseras">Pulseras</button>
+        <button class="filter-btn" data-filter="dijes">Dijes</button>
+    </div>
+</section>
+
+<!-- PRODUCTOS -->
+<section class="collection">
+    <div class="collection-header">
+        <span class="collection-subtitle">NUEVAS INCORPORACIONES</span>
+        <h2 class="collection-title">Colección 2025</h2>
+        <div class="collection-line"></div>
+    </div>
+
+    <div class="nov-grid" id="novGrid">
+
+        <!-- PRODUCTO 1 -->
+        <div class="nov-card reveal" data-category="anillos">
+            <div class="nov-card-img">
+                <div class="nov-badge">NUEVO</div>
+                <img src="anillos/anillopremium.png" alt="Anillo Eternidad Oro 18k">
+                <div class="nov-card-overlay">
+                    <span class="view-text">Ver detalle</span>
+                    <a href="producto.html?id=1" class="btn-hover">Explorar</a>
+                </div>
+                <button class="nov-wishlist" data-id="1" title="Guardar">
+                    <i class="far fa-heart"></i>
+                </button>
+                <div class="glass-reflection"></div>
+            </div>
+            <div class="nov-card-info">
+                <span class="nov-card-cat">Anillos</span>
+                <h3 class="nov-card-name">Anillo Eternidad Oro 18k</h3>
+                <div class="nov-card-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span>(47)</span>
+                </div>
+                <div class="nov-card-footer">
+                    <span class="nov-card-price">$800.000</span>
+                    <button class="nov-add-btn" data-id="1" data-name="Anillo Eternidad Oro 18k" data-price="800000" data-img="anillos/anillopremium.png">
+                        <i class="fas fa-bag-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCTO 2 -->
+        <div class="nov-card reveal" data-category="cadenas">
+            <div class="nov-card-img">
+                <div class="nov-badge">NUEVO</div>
+                <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&q=80" alt="Cadena Infinity Premium">
+                <div class="nov-card-overlay">
+                    <span class="view-text">Ver detalle</span>
+                    <a href="producto.html?id=2" class="btn-hover">Explorar</a>
+                </div>
+                <button class="nov-wishlist" data-id="2" title="Guardar">
+                    <i class="far fa-heart"></i>
+                </button>
+                <div class="glass-reflection"></div>
+            </div>
+            <div class="nov-card-info">
+                <span class="nov-card-cat">Cadenas</span>
+                <h3 class="nov-card-name">Cadena Infinity Premium</h3>
+                <div class="nov-card-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span>(32)</span>
+                </div>
+                <div class="nov-card-footer">
+                    <span class="nov-card-price">$1.200.000</span>
+                    <button class="nov-add-btn" data-id="2" data-name="Cadena Infinity Premium" data-price="1200000" data-img="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=200&q=80">
+                        <i class="fas fa-bag-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCTO 3 -->
+        <div class="nov-card reveal" data-category="pulseras">
+            <div class="nov-card-img">
+                <div class="nov-badge nov-badge-limited">LIMITADO</div>
+                <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=600&q=80" alt="Pulsera Elegance Brillantes">
+                <div class="nov-card-overlay">
+                    <span class="view-text">Ver detalle</span>
+                    <a href="producto.html?id=3" class="btn-hover">Explorar</a>
+                </div>
+                <button class="nov-wishlist" data-id="3" title="Guardar">
+                    <i class="far fa-heart"></i>
+                </button>
+                <div class="glass-reflection"></div>
+            </div>
+            <div class="nov-card-info">
+                <span class="nov-card-cat">Pulseras</span>
+                <h3 class="nov-card-name">Pulsera Elegance Brillantes</h3>
+                <div class="nov-card-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span>(18)</span>
+                </div>
+                <div class="nov-card-footer">
+                    <span class="nov-card-price">$650.000</span>
+                    <button class="nov-add-btn" data-id="3" data-name="Pulsera Elegance Brillantes" data-price="650000" data-img="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=200&q=80">
+                        <i class="fas fa-bag-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCTO 4 -->
+        <div class="nov-card reveal" data-category="dijes">
+            <div class="nov-card-img">
+                <div class="nov-badge">NUEVO</div>
+                <img src="https://images.unsplash.com/photo-1588444650700-4c9b7d3c7f43?w=600&q=80" alt="Dije Corazón Oro 18k">
+                <div class="nov-card-overlay">
+                    <span class="view-text">Ver detalle</span>
+                    <a href="producto.html?id=4" class="btn-hover">Explorar</a>
+                </div>
+                <button class="nov-wishlist" data-id="4" title="Guardar">
+                    <i class="far fa-heart"></i>
+                </button>
+                <div class="glass-reflection"></div>
+            </div>
+            <div class="nov-card-info">
+                <span class="nov-card-cat">Dijes</span>
+                <h3 class="nov-card-name">Dije Corazón Oro 18k</h3>
+                <div class="nov-card-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span>(25)</span>
+                </div>
+                <div class="nov-card-footer">
+                    <span class="nov-card-price">$600.000</span>
+                    <button class="nov-add-btn" data-id="4" data-name="Dije Corazón Oro 18k" data-price="600000" data-img="https://images.unsplash.com/photo-1588444650700-4c9b7d3c7f43?w=200&q=80">
+                        <i class="fas fa-bag-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCTO 5 -->
+        <div class="nov-card reveal" data-category="anillos">
+            <div class="nov-card-img">
+                <div class="nov-badge nov-badge-limited">EXCLUSIVO</div>
+                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80" alt="Anillo Solitario Diamante">
+                <div class="nov-card-overlay">
+                    <span class="view-text">Ver detalle</span>
+                    <a href="producto.html?id=5" class="btn-hover">Explorar</a>
+                </div>
+                <button class="nov-wishlist" data-id="5" title="Guardar">
+                    <i class="far fa-heart"></i>
+                </button>
+                <div class="glass-reflection"></div>
+            </div>
+            <div class="nov-card-info">
+                <span class="nov-card-cat">Anillos</span>
+                <h3 class="nov-card-name">Anillo Solitario Diamante</h3>
+                <div class="nov-card-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span>(61)</span>
+                </div>
+                <div class="nov-card-footer">
+                    <span class="nov-card-price">$2.500.000</span>
+                    <button class="nov-add-btn" data-id="5" data-name="Anillo Solitario Diamante" data-price="2500000" data-img="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=200&q=80">
+                        <i class="fas fa-bag-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCTO 6 -->
+        <div class="nov-card reveal" data-category="cadenas">
+            <div class="nov-card-img">
+                <div class="nov-badge">NUEVO</div>
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80" alt="Cadena Serpiente Oro">
+                <div class="nov-card-overlay">
+                    <span class="view-text">Ver detalle</span>
+                    <a href="producto.html?id=6" class="btn-hover">Explorar</a>
+                </div>
+                <button class="nov-wishlist" data-id="6" title="Guardar">
+                    <i class="far fa-heart"></i>
+                </button>
+                <div class="glass-reflection"></div>
+            </div>
+            <div class="nov-card-info">
+                <span class="nov-card-cat">Cadenas</span>
+                <h3 class="nov-card-name">Cadena Serpiente Oro</h3>
+                <div class="nov-card-stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="far fa-star"></i>
+                    <span>(14)</span>
+                </div>
+                <div class="nov-card-footer">
+                    <span class="nov-card-price">$980.000</span>
+                    <button class="nov-add-btn" data-id="6" data-name="Cadena Serpiente Oro" data-price="980000" data-img="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=200&q=80">
+                        <i class="fas fa-bag-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CARGAR MÁS -->
+    <div class="nov-load-more reveal">
+        <button class="nov-load-btn" id="loadMoreBtn">
+            <span>Ver más piezas</span>
+            <i class="fas fa-chevron-down"></i>
+        </button>
+    </div>
+
+</section>
+
+<!-- BANNER EDITORIAL -->
+<section class="nov-banner reveal">
+    <div class="nov-banner-overlay"></div>
+    <div class="nov-banner-content">
+        <span class="collection-subtitle">EDICIÓN ESPECIAL 2025</span>
+        <h2 class="nov-banner-title">Alta Joyería Artesanal</h2>
+        <div class="divider"></div>
+        <p class="nov-banner-text">Cada pieza nace del oro más puro y el talento de maestros con 20 años de experiencia. Diseñadas para durar generaciones.</p>
+        <a href="contactos.html" class="btn-luxury">Solicitar asesoría exclusiva</a>
+    </div>
+</section>
+
+<!-- BENEFICIOS -->
+<section class="benefits">
+    <div class="benefits-header reveal">
+        <span class="benefits-subtitle">MAISON ALYEN</span>
+        <h2 class="benefits-title">Excelencia en cada detalle</h2>
+        <div class="benefits-line"></div>
+    </div>
+    <div class="benefits-grid">
+        <div class="benefit-card reveal">
+            <div class="icon-box"><i class="fas fa-gem"></i></div>
+            <h3>Alta Joyería</h3>
+            <p>Materiales certificados de la más alta calidad</p>
+        </div>
+        <div class="benefit-card reveal">
+            <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+            <h3>Garantía Internacional</h3>
+            <p>Respaldo exclusivo en cada pieza</p>
+        </div>
+        <div class="benefit-card reveal">
+            <div class="icon-box"><i class="fas fa-truck"></i></div>
+            <h3>Envíos Premium</h3>
+            <p>Seguridad y cobertura en todo Colombia</p>
+        </div>
+    </div>
+</section>
+
+<!-- TOAST CARRITO -->
+<div class="cart-toast" id="cartToast">
+    <i class="fas fa-check-circle"></i>
+    <span>Producto añadido al carrito</span>
+    <a href="carrito.html" class="toast-cart-link">Ver carrito <i class="fas fa-arrow-right"></i></a>
+</div>
+
+<!-- FOOTER MENU -->
+<div class="footer-menu">
+    <div class="footer-container">
+        <div class="footer-column reveal">
+            <h3 class="footer-title">Tienda</h3>
+            <div class="footer-links">
+                <a href="anillos.html">Anillos</a>
+                <a href="cadenas.html">Cadenas</a>
+                <a href="pulseras.html">Pulseras</a>
+                <a href="dijes.html">Dijes</a>
+            </div>
+        </div>
+        <div class="footer-column reveal">
+            <h3 class="footer-title">Clientes</h3>
+            <div class="footer-links">
+                <a href="mi-cuenta.html">Mi cuenta</a>
+                <a href="#">Seguimiento de pedido</a>
+                <a href="#">Soporte</a>
+            </div>
+        </div>
+        <div class="footer-column reveal">
+            <h3 class="footer-title">Colecciones</h3>
+            <div class="footer-links">
+                <a href="#">Oro 18k</a>
+                <a href="#">Edición exclusiva</a>
+                <a href="novedades.html">Novedades</a>
+            </div>
+        </div>
+        <div class="footer-column reveal">
+            <h3 class="footer-title">Información</h3>
+            <div class="footer-links">
+                <a href="Poli-privacidad.html">Privacidad</a>
+                <a href="Terminos.html">Términos</a>
+                <a href="Poli-envios.html">Envíos</a>
+                <a href="Poli-garantia.html">Garantía</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- WHATSAPP -->
+<div class="whatsapp-fixed">
+    <a href="https://wa.me/573000000000" target="_blank" class="whatsapp-btn">
+        <span class="whatsapp-text">Permítenos ofrecerte una asesoría exclusiva</span>
+        <span class="whatsapp-icon"><i class="fab fa-whatsapp"></i></span>
+    </a>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer-lux">
+    <div class="lux-line"></div>
+    <div class="lux-content">
+        <h2 class="lux-brand">ALYEN</h2>
+        <div class="lux-divider"></div>
+        <p class="lux-copy">Alta joyería</p>
+    </div>
+    <div class="page-transition"></div>
+</footer>
+
+<!-- JS UNIFICADO -->
+<script>
+
+const PRODUCTS = {
+    1: { name:"Anillo Eternidad Oro 18k",   price:800000,   img:"anillos/anillopremium.png",                                                              category:"Anillos",  href:"anillos.html"  },
+    2: { name:"Cadena Infinity Premium",    price:1200000,  img:"https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&q=80",                category:"Cadenas",  href:"cadenas.html"  },
+    3: { name:"Pulsera Elegance Brillantes",price:650000,   img:"https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=600&q=80",                category:"Pulseras", href:"pulseras.html" },
+    4: { name:"Dije Corazón Oro 18k",       price:600000,   img:"https://images.unsplash.com/photo-1588444650700-4c9b7d3c7f43?w=600&q=80",                category:"Dijes",    href:"dijes.html"    },
+    5: { name:"Anillo Solitario Diamante",  price:2500000,  img:"https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80",                category:"Anillos",  href:"anillos.html"  },
+    6: { name:"Cadena Serpiente Oro",       price:980000,   img:"https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&q=80",                category:"Cadenas",  href:"cadenas.html"  }
+};
+
+function getCart() { return JSON.parse(localStorage.getItem("alyen_cart")) || []; }
+function saveCart(cart) { localStorage.setItem("alyen_cart", JSON.stringify(cart)); }
+function getCartTotal(cart) { return cart.reduce((sum, item) => sum + item.qty, 0); }
+function updateCartBadge() {
+    const badge = document.getElementById("navCartBadge");
+    if (badge) badge.textContent = getCartTotal(getCart());
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    updateCartBadge();
+
+    /* ---- HEADER SCROLL ---- */
+    window.addEventListener("scroll", () => {
+        document.querySelector(".header").classList.toggle("scrolled", window.scrollY > 50);
+    });
+
+    /* ---- REVEAL ---- */
+    const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("show", "active"); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
+
+    /* ---- AÑADIR AL CARRITO ---- */
+    document.querySelectorAll(".nov-add-btn").forEach(btn => {
+        btn.addEventListener("click", function () {
+            const id    = +this.dataset.id;
+            const name  = this.dataset.name;
+            const price = +this.dataset.price;
+            const img   = this.dataset.img;
+            let cart    = getCart();
+            const exists = cart.find(i => i.id === id);
+            if (exists) { exists.qty++; } else { cart.push({ id, name, price, qty:1, img }); }
+            saveCart(cart);
+            updateCartBadge();
+            this.classList.add("added");
+            this.innerHTML = '<i class="fas fa-check"></i>';
+            const self = this;
+            setTimeout(() => {
+                self.classList.remove("added");
+                self.innerHTML = '<i class="fas fa-bag-shopping"></i>';
+            }, 1800);
+            const toast = document.getElementById("cartToast");
+            toast.classList.add("visible");
+            setTimeout(() => toast.classList.remove("visible"), 3000);
+        });
+    });
+
+    /* ---- WISHLIST ---- */
+    document.querySelectorAll(".nov-wishlist").forEach(btn => {
+        btn.addEventListener("click", function () {
+            this.classList.toggle("active");
+            const icon = this.querySelector("i");
+            icon.className = this.classList.contains("active") ? "fas fa-heart" : "far fa-heart";
+        });
+    });
+
+    /* ---- FILTROS ---- */
+    const filterBtns = document.querySelectorAll(".filter-btn");
+    const cards      = document.querySelectorAll(".nov-card");
+    filterBtns.forEach(btn => {
+        btn.addEventListener("click", function () {
+            filterBtns.forEach(b => b.classList.remove("active"));
+            this.classList.add("active");
+            const filter = this.dataset.filter;
+            cards.forEach(card => {
+                if (filter === "all" || card.dataset.category === filter) {
+                    card.style.display = "";
+                    card.classList.remove("show", "active");
+                    requestAnimationFrame(() => requestAnimationFrame(() => card.classList.add("show", "active")));
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    });
+
+    /* ---- CARGAR MÁS ---- */
+    document.getElementById("loadMoreBtn").addEventListener("click", function () {
+        this.innerHTML = '<span>Cargando...</span><i class="fas fa-circle-notch fa-spin"></i>';
+        setTimeout(() => {
+            this.innerHTML = '<span>Todas las piezas cargadas</span><i class="fas fa-check"></i>';
+            this.disabled = true;
+            this.style.opacity = "0.5";
+        }, 1200);
+    });
+
+    /* ---- TRANSICIÓN DE PÁGINA ---- */
+    document.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function(e) {
+            if (this.target === "_blank") return;
+            if (!this.href || this.href.includes("javascript:void")) return;
+            e.preventDefault();
+            const overlay = document.querySelector(".page-transition");
+            if (overlay) overlay.classList.add("active");
+            setTimeout(() => { window.location = this.href; }, 400);
+        });
+    });
+});
+</script>
+</body>
+</html>

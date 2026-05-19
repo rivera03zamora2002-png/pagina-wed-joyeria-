@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Alyen Joyería | Luxury</title>
+
+<!-- FUENTES PREMIUM -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- ICONOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="diseño2.css">
+</head>
+
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="png wed/LogoAlyen.png" alt="Alyen Logo">
+    </div>
+
+    <!-- NAV -->
+    <nav class="nav">
+
+        <a href="index.html" class="nav-link">Inicio</a>
+
+
+        <!-- DROPDOWN MEGA -->
+        <div class="dropdown">
+
+            <button class="dropbtn" type="button">
+                Productos ▾
+            </button>
+
+            <div class="dropdown-content">
+
+                <a href="anillos.html">
+                    <img src="anillos/anillopremium.png" alt="Anillos">
+                    <span>Anillos</span>
+                </a>
+
+                <a href="cadenas.html">
+                    <img src="png wed/cadena1.png" alt="Cadenas">
+                    <span>Cadenas</span>
+                </a>
+
+                <a href="pulseras.html">
+                    <img src="png wed/pulsera1.png" alt="Pulseras">
+                    <span>Pulseras</span>
+                </a>
+
+                <a href="dijes.html">
+                    <img src="png wed/dije1.png" alt="Dijes">
+                    <span>Dijes</span>
+                </a>
+
+            </div>
+
+        </div>
+
+        <a href="contactos.html" class="nav-link">Contacto</a>
+
+        <a href="cuenta.html" class="nav-link">Mi Cuenta</a>
+
+        <!-- ① ÍCONO CARRITO EN NAV (tomado de producto.html) -->
+        <a href="carrito.html" class="nav-link cart-nav-link" aria-label="Ver carrito">
+            <i class="fas fa-bag-shopping"></i>
+            <span class="cart-badge" id="navCartBadge">0</span>
+        </a>
+
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <!-- VIDEO DE FONDO -->
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="png wed/Diamond_bracelet_ring_202604221758.mp4" type="video/mp4">
+    </video>
+
+    <!-- CAPAS -->
+    <div class="hero-overlay"></div>
+    <div class="hero-noise"></div>
+
+    <!-- CONTENIDO -->
+    <div class="hero-content">
+
+        <h1 class="lux-title">ALYEN</h1>
+
+        <div class="divider"></div>
+
+        <p class="lux-phrase">
+            Elegancia que trasciende generaciones
+        </p>
+
+        <span class="lux-cta-text">
+            DESCUBRE LA COLECCIÓN
+        </span>
+
+        <a href="#" class="btn-luxury">Explorar</a>
+
+    </div>
+
+</section>
+
+
+<!-- COLECCIÓN -->
+<section class="collection">
+
+    <div class="collection-header">
+
+        <span class="collection-subtitle">
+            MAISON ALYEN
+        </span>
+
+        <h2 class="collection-title">
+            Colección Exclusiva
+        </h2>
+
+        <div class="collection-line"></div>
+
+    </div>
+
+    <div class="grid">
+
+        <!-- ② CARDS CON ENLACES A producto.html?id=X (tomado de producto.html) -->
+        <div class="card reveal">
+            <div class="card-img">
+                <img src="png wed/anillo1.png" alt="Anillo Oro 18k">
+
+                <div class="card-overlay">
+                    <span class="view-text">Ver producto</span>
+                    <a href="producto.html" class="btn-hover">Explorar</a>
+                </div>
+
+                <div class="glass-reflection"></div>
+            </div>
+
+            <div class="card-info">
+                <h3>Anillo Oro 18k</h3>
+                <p>$800.000</p>
+            </div>
+        </div>
+
+        <div class="card reveal">
+            <div class="card-img">
+                <img src="png wed/cadena1.png" alt="Cadena Premium">
+
+                <div class="card-overlay">
+                    <span class="view-text">Ver producto</span>
+                    <a href="producto.html?id=2" class="btn-hover">Explorar</a>
+                </div>
+
+                <div class="glass-reflection"></div>
+            </div>
+
+            <div class="card-info">
+                <h3>Cadena Premium</h3>
+                <p>$1.200.000</p>
+            </div>
+        </div>
+
+        <div class="card reveal">
+            <div class="card-img">
+                <img src="png wed/pulsera1.png" alt="Pulsera Elegance">
+
+                <div class="card-overlay">
+                    <span class="view-text">Ver producto</span>
+                    <a href="producto.html?id=3" class="btn-hover">Explorar</a>
+                </div>
+
+                <div class="glass-reflection"></div>
+            </div>
+
+            <div class="card-info">
+                <h3>Pulsera Elegance</h3>
+                <p>$650.000</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BENEFICIOS -->
+<section class="benefits">
+
+    <div class="benefits-header reveal">
+        <span class="benefits-subtitle">MAISON ALYEN</span>
+        <h2 class="benefits-title">Excelencia en cada detalle</h2>
+        <div class="benefits-line"></div>
+    </div>
+
+    <div class="benefits-grid">
+
+        <div class="benefit-card reveal">
+            <div class="icon-box">
+                <i class="fas fa-gem"></i>
+            </div>
+            <h3>Alta Joyería</h3>
+            <p>Materiales certificados de la más alta calidad</p>
+        </div>
+
+        <div class="benefit-card reveal">
+            <div class="icon-box">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Garantía Internacional</h3>
+            <p>Respaldo exclusivo en cada pieza</p>
+        </div>
+
+        <div class="benefit-card reveal">
+            <div class="icon-box">
+                <i class="fas fa-truck"></i>
+            </div>
+            <h3>Envíos Premium</h3>
+            <p>Seguridad y cobertura en todo Colombia</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <!-- PARTÍCULAS -->
+    <div class="lux-particles"></div>
+
+    <!-- LUZ GLOBAL -->
+    <div class="lux-light"></div>
+
+    <div class="footer-container">
+
+        <!-- LOGO -->
+        <div class="footer-logo reveal">
+            <img src="png wed/ALYENlogoprincipal.png" alt="Alyen Joyería">
+            <span class="logo-glow"></span>
+            <span class="logo-shine"></span>
+        </div>
+
+        <!-- MARCA -->
+        <p class="footer-brand reveal">
+            ALYEN
+        </p>
+
+        <!-- LÍNEA -->
+        <div class="footer-line reveal"></div>
+
+        <!-- REDES -->
+        <div class="footer-social reveal">
+
+            <a href="#" class="social instagram">
+                <i class="fab fa-instagram"></i>
+                <span class="hover-glow"></span>
+            </a>
+
+            <a href="#" class="social facebook">
+                <i class="fab fa-facebook-f"></i>
+                <span class="hover-glow"></span>
+            </a>
+
+            <a href="https://wa.me/573000000000" class="social whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span class="hover-glow"></span>
+            </a>
+
+            <a href="#" class="social tiktok">
+                <i class="fab fa-tiktok"></i>
+                <span class="hover-glow"></span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-menu">
+
+        <div class="footer-container">
+
+            <!-- COLUMNA 1 -->
+            <div class="footer-column reveal">
+                <h3 class="footer-title">Tienda</h3>
+                <div class="footer-links">
+                    <a href="anillos.html">Anillos</a>
+                    <a href="cadenas.html">Cadenas</a>
+                    <a href="pulseras.html">Pulseras</a>
+                    <a href="dijes.html">Dijes</a>
+                </div>
+            </div>
+
+            <!-- COLUMNA 2 -->
+            <div class="footer-column reveal">
+                <h3 class="footer-title">Clientes</h3>
+                <div class="footer-links">
+                    <a href="mi-cuenta.html">Mi cuenta</a>
+                    <a href="#">Seguimiento de pedido</a>
+                    <a href="soporte.html">Soporte</a>
+                </div>
+            </div>
+
+            <!-- COLUMNA 3 -->
+            <div class="footer-column reveal">
+                <h3 class="footer-title">Colecciones</h3>
+                <div class="footer-links">
+                    <a href="#">Oro 18k</a>
+                    <a href="#">Edición exclusiva</a>
+                    <a href="novedades.html">Novedades</a>
+                </div>
+            </div>
+
+            <!-- COLUMNA 4 -->
+            <div class="footer-column reveal">
+                <h3 class="footer-title">Información</h3>
+                <div class="footer-links">
+                    <a href="Poli-privacidad.html">Privacidad</a>
+                    <a href="Terminos.html">Términos</a>
+                    <a href="Poli-envios.html">Envíos</a>
+                    <a href="Poli-garantia.html">Garantía</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER PREMIUM -->
+    <div class="footer-lux">
+
+        <!-- PARTÍCULAS -->
+        <div class="lux-particles"></div>
+
+        <!-- LÍNEA SUPERIOR -->
+        <div class="lux-line"></div>
+
+        <!-- CONTENIDO -->
+        <div class="lux-content">
+
+            <h2 class="lux-brand">ALYEN</h2>
+
+            <div class="lux-divider"></div>
+
+            <p class="lux-copy">
+                Joyería de alta elegancia
+            </p>
+
+        </div>
+
+        <!-- ③ page-transition correctamente dentro de footer-lux (como en producto.html) -->
+        <div class="page-transition"></div>
+
+    </div>
+
+</footer>
+
+
+<!-- WHATSAPP FIJO -->
+<div class="whatsapp-fixed">
+    <a href="https://wa.me/573000000000" target="_blank" class="whatsapp-btn">
+
+        <span class="whatsapp-text">
+            Permítenos ofrecerte una asesoría exclusiva
+        </span>
+
+        <span class="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+        </span>
+
+    </a>
+</div>
+
+
+<!-- ======================================================
+     JAVASCRIPT — unificado en DOMContentLoaded (como en producto.html)
+====================================================== -->
+<script>
+
+/* ====== ④ CATÁLOGO DE PRODUCTOS (tomado de producto.html) ====== */
+const PRODUCTS = {
+    1: {
+        name:     "Anillo Oro 18k",
+        price:    800000,
+        img:      "anillos/anillopremium.png",
+        category: "Anillos",
+        href:     "anillos.html",
+        desc:     "Joya artesanal elaborada en oro de 18 kilates con acabado satinado. Diseñada para mujeres que aprecian la elegancia atemporal. Cada pieza es trabajada a mano por nuestros maestros joyeros con más de 20 años de experiencia. Certificado de autenticidad incluido."
+    },
+    2: {
+        name:     "Cadena Premium",
+        price:    1200000,
+        img:      "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&q=80",
+        category: "Cadenas",
+        href:     "cadenas.html",
+        desc:     "Cadena artesanal en oro 18k de eslabones finos, con cierre de seguridad. Longitud: 45 cm. Ideal para llevar sola o con un dije exclusivo. Peso: 8 gramos."
+    },
+    3: {
+        name:     "Pulsera Elegance",
+        price:    650000,
+        img:      "https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=600&q=80",
+        category: "Pulseras",
+        href:     "pulseras.html",
+        desc:     "Pulsera tejida en oro de 18 kilates con detalles en pavé de brillantes. Ajuste regulable. Talla única adaptable. Perfecta para cualquier ocasión especial."
+    },
+    4: {
+        name:     "Dije Corazón Oro 18k",
+        price:    600000,
+        img:      "https://images.unsplash.com/photo-1588444650700-4c9b7d3c7f43?w=600&q=80",
+        category: "Dijes",
+        href:     "dijes.html",
+        desc:     "Dije en forma de corazón elaborado en oro de 18 kilates. Símbolo de amor eterno, trabajado con técnica de filigrana. Compatible con cadenas de 1 a 3 mm."
+    }
+};
+
+
+/* ====== ⑤ HELPERS DE CARRITO con localStorage (tomados de producto.html) ====== */
+function getCart() {
+    return JSON.parse(localStorage.getItem("alyen_cart")) || [];
+}
+function saveCart(cart) {
+    localStorage.setItem("alyen_cart", JSON.stringify(cart));
+}
+function getCartTotal(cart) {
+    return cart.reduce((sum, item) => sum + item.qty, 0);
+}
+function updateCartBadge() {
+    const total = getCartTotal(getCart());
+    const badge = document.getElementById("navCartBadge");
+    if (badge) badge.textContent = total;
+}
+
+
+/* ====== ⑥ DOMContentLoaded — todo unificado (como en producto.html) ====== */
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* Badge inicial del carrito */
+    updateCartBadge();
+
+    /* Header con scroll */
+    window.addEventListener("scroll", () => {
+        document.querySelector(".header").classList.toggle("scrolled", window.scrollY > 50);
+    });
+
+    /* Reveal con IntersectionObserver */
+    const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add("show", "active");
+            }
+        });
+    }, { threshold: 0.15 });
+    document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
+
+    /* Transición de página */
+    document.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function (e) {
+            if (this.target === "_blank") return;
+            e.preventDefault();
+            const overlay = document.querySelector(".page-transition");
+            if (overlay) overlay.classList.add("active");
+            setTimeout(() => { window.location = this.href; }, 500);
+        });
+    });
+
+});
+
+</script>
+</body>
+
+</html>
